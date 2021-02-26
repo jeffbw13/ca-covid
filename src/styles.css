@@ -35,10 +35,12 @@ p {
 .button-row {
   background-color: #a07178;
   position: fixed;
+  max-width: 30%;
   top: 5;
   left: 10px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 3px;
 }
 
