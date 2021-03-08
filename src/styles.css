@@ -1,3 +1,7 @@
+* {
+  margin: 5px;
+}
+
 html {
   font-family: system-ui, sans-serif;
   font-size: 1.25rem;
@@ -33,10 +37,10 @@ p {
 }
 
 .button-row {
-  background-color: #a07178;
+  /* background-color: #a07178; */
   position: fixed;
   max-width: 30%;
-  top: 5;
+  top: 37px;
   left: 10px;
   display: flex;
   flex-direction: row;
@@ -64,8 +68,11 @@ p {
 
 .countyInfo {
   position: fixed;
-  top: 100px;
+  top: 120px;
   left: 10px;
+}
+.countyInfo h4 {
+  margin-bottom: -10px;
 }
 
 .countyInfo table {
