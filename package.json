@@ -4,7 +4,7 @@
   "description": "COVID-19 stats by county",
   "keywords": [],
   "main": "src/index.js",
-  "homepage": "/subdir/",
+  "homepage": "https://aws.codecology.com/ca-covid",
   "dependencies": {
     "html-react-parser": "^1.1.1",
     "prettier": "^2.2.1",
