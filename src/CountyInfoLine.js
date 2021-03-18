@@ -1,16 +1,20 @@
 import React from "react";
 
 const CasesLine = ({ rec, key }) => {
+  //<td>{rec.newcountconfirmed || "none"}</td>
+  //<td>{rec.newcountdeaths || "none"}</td>
+  //<td>{~~rec.totalcountconfirmed || "none"}</td>
+  //<td>{~~rec.totalcountdeaths || "none"}</td>
   if (rec.date === null) {
     return null;
   }
   return (
     <tr>
       <td>{rec.date.substring(0, 10)}</td>
-      <td>{rec.newcountconfirmed || "none"}</td>
-      <td>{rec.newcountdeaths || "none"}</td>
-      <td>{~~rec.totalcountconfirmed || "none"}</td>
-      <td>{~~rec.totalcountdeaths || "none"}</td>
+      <td>{rec.cases || "none"}</td>
+      <td>{rec.deaths || "none"}</td>
+      <td>{~~rec.cumulative_cases || "none"}</td>
+      <td>{~~rec.cumulative_deaths || "none"}</td>
     </tr>
   );
 };
