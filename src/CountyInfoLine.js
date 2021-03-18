@@ -1,6 +1,9 @@
 import React from "react";
 
 const CasesLine = ({ rec, key }) => {
+  if (rec.date === null) {
+    return null;
+  }
   return (
     <tr>
       <td>{rec.date.substring(0, 10)}</td>

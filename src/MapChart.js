@@ -12,7 +12,9 @@ const MapChart = ({ setTooltipContent }) => {
   const [countyInfo, setCountyInfo] = useState(null);
 
   const handleClickCounty = (county) => {
-    const url = `${chart.url} WHERE "county" LIKE '${county}%'`;
+    const oldUrl = `${chart.url} WHERE "county" LIKE '${county}%'`;
+    const newUrl = `${chart.url} WHERE "area" LIKE '${county}%'`;
+    const url = chart.oldNew && chart.oldNew === "new" ? newUrl : oldUrl;
     console.log("url: ", url);
     fetch(url)
       .then((response) => response.json())

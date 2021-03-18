@@ -2,14 +2,17 @@ const charts = {
   cases: {
     name: "cases",
     title: "Cases by County",
-    url: `https://data.ca.gov/api/3/action/datastore_search_sql?sql=SELECT * from "926fd08f-cc91-4828-af38-bd45de97f8c3"`,
+    oldNew: "new",
+    oldUrl: `https://data.ca.gov/api/3/action/datastore_search_sql?sql=SELECT * from "926fd08f-cc91-4828-af38-bd45de97f8c3"`,
+    url: `https://data.chhs.ca.gov/api/3/action/datastore_search_sql?sql=SELECT * from "046cdd2b-31e5-4d34-9ed3-b48cdbc4be7a"`,
     thead: `<thead><tr><th>Date</th><th>New<br />Cases</th><th>New<br />Deaths</th><th>Total<br />Cases</th><th>Total<br />Deaths</th>
     </tr></thead>`,
   },
   hospitalizations: {
     name: "hospitalizations",
     title: "Hospitalizations",
-    url: `https://data.ca.gov/api/3/action/datastore_search_sql?sql=SELECT * from "42d33765-20fd-44b8-a978-b083b7542225"`,
+    oldUrl: `https://data.ca.gov/api/3/action/datastore_search_sql?sql=SELECT * from "42d33765-20fd-44b8-a978-b083b7542225"`,
+    url: `https://data.chhs.ca.gov/api/3/action/datastore_search_sql?sql=SELECT * from "47af979d-8685-4981-bced-96a6b79d3ed5"`,
     thead: `<thead><tr><th>Date</th><th>Confirmed<br />Patients</th><th>Suspected<br />Patients</th><th>Total<br />Patients</th><th>All<br />Beds</th><th>ICU<br />Confirmed<br />Patients</th><th>ICU<br />Suspected<br />Patients</th><th>ICU<br />Avail<br />Beds</th></tr></thead>`,
   },
   homeless: {
